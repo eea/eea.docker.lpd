@@ -46,4 +46,6 @@ echo LPD_PRINT_SERVICE=$LPD_PRINT_SERVICE >> $JBOSS_HOME/standalone/deployments/
 echo LPD_EXTRACT_SPATIAL_DATA_SERVICE=$LPD_EXTRACT_SPATIAL_DATA_SERVICE >> $JBOSS_HOME/standalone/deployments/lpd_web.properties
 echo LPD_SEARCH_LAYER=$LPD_SEARCH_LAYER >> $JBOSS_HOME/standalone/deployments/lpd_web.properties
 
+mv /tmp/artifacts/*.war $JBOSS_HOME/standalone/deployments
+
 exec "$@" 

@@ -26,6 +26,8 @@ COPY jboss/ /opt/jboss/jboss-as-7.1.1.Final/
 COPY lpd/configuration/standalone.xml /tmp
 RUN mv /opt/jboss/jboss-as-7.1.1.Final/jboss-modules-1.1.5.GA.jar /opt/jboss/jboss-as-7.1.1.Final/jboss-modules.jar
 
+COPY lpd/deployments/*.war /tmp/artifacts/
+
 EXPOSE 8080 9990 
 
 #please enable and test
