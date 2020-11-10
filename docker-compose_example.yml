@@ -25,8 +25,8 @@ services:
     - SCK_ARCGIS_PROXY=http://lpddevelop.eionet.europa.eu/lpd_web/ArcGISProxy
     - SCK_SPATIAL_REFERENCE=3857
     - SCK_BACKGROUND_LAYER=http://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/0
-    - mail.smtp.host=changeme
-    - mail.smtp.user=changeme
+    - mail_smtp_host=changeme
+    - mail_smtp_user=changeme
     - SCK_MAIL_SMTP_PASSWORD=changeme
     - SCK_MAIL_STMP_FROM_FOR_BENEF=changeme
     - SCK_MAIL_OUTCOPY=changeme
